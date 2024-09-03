@@ -1,26 +1,8 @@
-let sales: number = 123_456_789;
-let course: string = 'Typescript';
-let is_published = true;
-let level;
-
-
-function render(document: any) {
-    console.log(document)
-
+function calculateTax(income: number, taxYear = 2022): number{
+    if (taxYear < 2022)
+        return income * 1.2;
+    return income * 1.3;
+    // undefined 
 }
 
-let number: number[] = [];
-number.forEach(n => n.)
-
-// 1, 'Naseem'
-let user: [number, string, boolean, number] = [1, 'Naseem', true, 0];
-user.push(1);
-
-// const samll = 1;
-// const medium = 2;
-// const large =  3;
-
-// pascalcase
-const enum Size { Samll = 1, Medium,Large };
-let mySize: Size.Medium;
-console.log(mySize);
+calculateTax(10_000, 2022);
