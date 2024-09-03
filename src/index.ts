@@ -1,8 +1,5 @@
-function calculateTax(income: number, taxYear = 2022): number{
-    if (taxYear < 2022)
-        return income * 1.2;
-    return income * 1.3;
-    // undefined 
-}
-
-calculateTax(10_000, 2022);
+let employee: {
+   readonly id: number,
+    name: string
+} = { id: 1, name: 'Naseem' };
+employee.id = 0;
